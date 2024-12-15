@@ -59,7 +59,7 @@ packadd! dracula
 syntax enable 
 colorscheme gruvbox
 set bg=dark
-set guifont=Monospace\ Bold\ 15
+set guifont=Monospace\ Bold\ 13
 set nu rnu
 set laststatus=2
 
