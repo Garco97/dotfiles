@@ -137,7 +137,8 @@ alias stats='neofetch && conky &'
 alias update='omz update; sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean'
 
 
-eval "$(starship init zsh)"
+# FZF keybindings (Ctrl-R)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/share/pnpm"
@@ -147,5 +148,6 @@ export PATH="$PATH:/opt/nvim/"
 export PATH="$PATH:/usr/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin"
 export PATH="$PATH:$HOME/.eclipse/com.st.stm32cube.ide.mcu.rcp.product_1.16.0_139065174_linux_gtk_x86_64/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.linux64_2.2.100.202501151542/tools/bin"
 
+eval "$(starship init zsh)"
 
 
