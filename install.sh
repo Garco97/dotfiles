@@ -19,3 +19,5 @@ ln -sf "$DOTFILES/nvim" "$HOME/.config/nvim"
 # Tmux
 ln -sf "$DOTFILES/tmux/.tmux.conf" "$HOME/.tmux.conf"
 
+ln -sf "$DOTFILES/terminator/config" "$HOME/.config/terminator/config"
+
