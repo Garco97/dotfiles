@@ -147,6 +147,7 @@ export PATH="$PATH:$HOME/.fzf/bin"
 export PATH="$PATH:/opt/nvim/"
 export PATH="$PATH:/usr/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin"
 export PATH="$PATH:$HOME/.eclipse/com.st.stm32cube.ide.mcu.rcp.product_1.16.0_139065174_linux_gtk_x86_64/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.linux64_2.2.100.202501151542/tools/bin"
+alias ll="ls -lha"
 
 eval "$(starship init zsh)"
 
