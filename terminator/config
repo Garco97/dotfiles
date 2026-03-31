@@ -9,8 +9,7 @@
 [profiles]
   [[default]]
     allow_bold = False
-    background_darkness = 0.89
-    background_type = image
+    background_darkness = 0.81
     cursor_shape = ibeam
     cursor_color = "#00ff00"
     font = 0xProto Nerd Font Mono 15
@@ -20,6 +19,7 @@
     scrollback_infinite = True
     use_system_font = False
     copy_on_selection = True
+    background_image = /home/diego/Descargas/fantasy-art-artwork-fan-art-science-fiction-wallpaper-a876bda8c0a03c38609c515e38f2347a.jpg
 [layouts]
   [[default]]
     [[[child0]]]

@@ -118,6 +118,14 @@ diffvim () {
 	svn diff "${@}" | gvim -
 }
 
+update_devel() {
+    sshpass -p sisriteldefaultkey scp $1 deploy@devel.sisritel.com:/app/current/$1
+}
+
+update_production() {
+    sshpass -p sisriteldefaultkey scp $1 deploy@app.sisritel.com:/app/current/$1
+}
+
 
 alias vi="nvim"
 alias vim="nvim"
@@ -137,6 +145,10 @@ alias stats='neofetch && conky &'
 alias update='omz update; sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean'
 
 
+#Personales
+alias nf='neofetch'
+
+
 # FZF keybindings (Ctrl-R)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -145,10 +157,14 @@ export PATH="$PATH:$HOME/.local/share/pnpm"
 export PATH="$PATH:$HOME/.nvm/versions/node/v20.7.0/bin"
 export PATH="$PATH:$HOME/.fzf/bin"
 export PATH="$PATH:/opt/nvim/"
-export PATH="$PATH:/usr/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin"
+export PATH="$PATH:/opt/zephyr-sdk-0.17.4/"
+export PATH="$PATH:/home/diego/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin"
 export PATH="$PATH:$HOME/.eclipse/com.st.stm32cube.ide.mcu.rcp.product_1.16.0_139065174_linux_gtk_x86_64/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.linux64_2.2.100.202501151542/tools/bin"
+export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
+export PATH="$PATH:/usr/bin/"
 alias ll="ls -lha"
 
 eval "$(starship init zsh)"
 
 
+export ZEPHYR_SDK_INSTALL_DIR=/opt/zephyr-sdk-0.16.8
