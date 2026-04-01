@@ -5,6 +5,9 @@ DOTFILES="$HOME/.dotfiles"
 # Zsh
 ln -sf "$DOTFILES/zsh/.zshrc" "$HOME/.zshrc"
 
+# Bash
+ln -sf "$DOTFILES/bash/.bashrc" "$HOME/.bashrc"
+
 # Starship
 mkdir -p ~/.config
 ln -sf "$DOTFILES/starship/starship.toml" "$HOME/.config/starship.toml"
